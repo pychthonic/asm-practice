@@ -52,7 +52,7 @@ section .bss			; this means "This section will contain uninitialized data." Unin
 				; resb aka 'reserve byte' is used in the .bss section instead of the word 'dq' aka 
 				; 'define byte'? That's because you're reserving space for an uninitialized variable,
 				; instead of defining it in the program. The variable can be defined in the program 
-				; when it's run, isstead of by you explicitly when you initalize it, aka name it in
+				; when it's run, isstead of by you explicitly when you initialize it, aka name it in
 				; the .bss section.
 
 section .text
