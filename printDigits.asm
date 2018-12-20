@@ -13,7 +13,9 @@
 
 
 section .data			; the lines until the next section will contain initialized variables. The '.data' 
-				; section in a file contains initialized variables.
+				; section in a file contains initialized variables, aka variables whose values are 
+				; defined when writing the program instead of figured out by the computer when the
+				; program is eventually run.
 				
 	num dq 66690210 	; 'num' is the name of the variable. 'dq' means dairy queen, which is where the cpu
 				; is. just kidding. 'dq' means 'define quad word', so when we put the line together,
