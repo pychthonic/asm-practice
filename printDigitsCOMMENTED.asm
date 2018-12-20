@@ -24,8 +24,8 @@ section .data			; the lines until the next section will contain initialized vari
 				; it reads 'define num as a quadword containing the number 66690210'. this means
 				; the variable 'num' will use one quadword of space, which is 64 bits. if you're 
 				; using an x86_64 machine (this means '64-bits'. you're most likely using either 
-				; a 64-bit or a 32-bit machine), then your registers hold 64 bits each. So that's 
-				; conventient for this program, since it means the program will print any number
+				; a 64-bit or a 32-bit machine), then your registers hold 64 bits each. That's 
+				; conventient for our purposes, since it means the program will print any number
 				; that will fit in one of your registers. And what *that* means is that once we get 
 				; it to work, we can print out the numbers that are held in any register! But for
 				; now, all we're concentrating on is 'how does a computer take a number and print
