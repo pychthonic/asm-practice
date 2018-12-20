@@ -12,12 +12,17 @@
 	; can see what each line does and understand what it means, or something close to it.
 
 
-section .data			 ; the lines until the next section will contain initialized variables.
-	num dq 66690210 	; 'num' is the name of the variable. 'dq' means define quad word, which is 
-				; telling the computer that the variable will use one quad word of space, which is 
-				; 64 bits. if you're using an x86_64 machine, then your registers hold 64 bits each.
-				; Put any decimal number here, up to the max number a 64-bit register can hold. 
-				; Just replace the one I put ("90210666") with the number to print to screen.
+section .data			; the lines until the next section will contain initialized variables. The '.data' 
+				; section in a file contains initialized variables.
+				
+	num dq 66690210 	; 'num' is the name of the variable. 'dq' means dairy queen, which is where the cpu
+				; is. just kidding. 'dq' means 'define quad word', so when we put the line together,
+				; it reads 'define num as a quadword containing the number 66690210'. this means
+				; the variable 'num' will use one quad word of space, which is 64 bits. if you're using 
+				; an x86_64 machine (this means '64-bits'. you're most likely using either a 64-bit or 
+				; a 32-bit machine). then your registers hold 64 bits each. Put any decimal number here, 
+				; up to the max number a 64-bit register can hold. Just replace the one I put ("66690210") 
+				; with the number to print to screen.
 
 section .bss			; this means "This section will contain uninitialized data." Uninitialized data
 				; is variables whose values are not defined until the program runs. In this program,
