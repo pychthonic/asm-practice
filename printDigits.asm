@@ -18,17 +18,23 @@ section .data			; the lines until the next section will contain initialized vari
 	num dq 66690210 	; 'num' is the name of the variable. 'dq' means dairy queen, which is where the cpu
 				; is. just kidding. 'dq' means 'define quad word', so when we put the line together,
 				; it reads 'define num as a quadword containing the number 66690210'. this means
-				; the variable 'num' will use one quad word of space, which is 64 bits. if you're using 
-				; an x86_64 machine (this means '64-bits'. you're most likely using either a 64-bit or 
-				; a 32-bit machine). then your registers hold 64 bits each. Put any decimal number here, 
-				; up to the max number a 64-bit register can hold. Just replace the one I put ("66690210") 
-				; with the number to print to screen.
+				; the variable 'num' will use one quad word of space, which is 64 bits. if you're 
+				; using an x86_64 machine (this means '64-bits'. you're most likely using either 
+				; a 64-bit or a 32-bit machine). then your registers hold 64 bits each. Put any 
+				; decimal number here, up to the max number a 64-bit register can hold. Just replace
+				; the one I put ("66690210") with the number to print to screen.
 
 section .bss			; this means "This section will contain uninitialized data." Uninitialized data
 				; is variables whose values are not defined until the program runs. In this program,
 				; an uninitialized variable called 'asciiByte' will be used to store digits before
 				; they're printed to screen. 
-	asciiByte resb 1
+				
+	asciiByte resb 1	; this means, 'reserve 1 byte of space and call it 'asciiByte'. notice how the word
+				; resb aka 'reserve byte' is used in the .bss section instead of the word 'dq' aka 
+				; 'define byte'? That's because you're reserving space for an uninitialized variable,
+				; instead of defining it in the program. The variable can be defined in the program 
+				; when it's run, isstead of by you explicitly when you initalize it, aka name it in
+				; the .bss section.
 
 section .text
 	global _start
