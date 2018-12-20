@@ -22,7 +22,7 @@ section .data			; the lines until the next section will contain initialized vari
 	num dq 66690210 	; 'num' is the name of the variable. 'dq' means dairy queen, which is where the cpu
 				; is. just kidding. 'dq' means 'define quad word', so when we put the line together,
 				; it reads 'define num as a quadword containing the number 66690210'. this means
-				; the variable 'num' will use one quad word of space, which is 64 bits. if you're 
+				; the variable 'num' will use one quadword of space, which is 64 bits. if you're 
 				; using an x86_64 machine (this means '64-bits'. you're most likely using either 
 				; a 64-bit or a 32-bit machine), then your registers hold 64 bits each. So that's 
 				; conventient for this program, since it means the program will print any number
