@@ -8,8 +8,10 @@
 	; to the screen, then do the same for the number '3', then do the same for the number '0'.
 	
 	; More commentary coming soon. I'll add comments throughout the week. The goal is to have all lines 
-	; explained so that even someone with very little or no experience with assembly language programming 
-	; can see what each line does and understand what it means, or something close to it.
+	; explained so that even someone with little or no experience with assembly language programming 
+	; can see what each line does and understand what it means, or something close to it. If there's only 
+	; a certain line that you find confusing, you can just navigate to that lines comment and ignore the 
+	; rest.
 
 
 section .data			; the lines until the next section will contain initialized variables. The '.data' 
