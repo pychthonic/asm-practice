@@ -50,7 +50,7 @@ digitsToBytes:
 	push rdx	; which gets pushed onto stack
 
 	cmp rax, 0	; if the number divided by 10 is zero, then we have all the numbers
-				; on the stack and we can start printing them, in dumpnums
+				; on the stack and we can start printing them, in printNums
 	jne digitsToBytes
 
 	mov r10, asciiByte	; move address of the uninitialized .bss byte into r10
