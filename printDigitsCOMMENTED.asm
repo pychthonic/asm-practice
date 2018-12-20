@@ -10,7 +10,7 @@
 	; More commentary coming soon. I'll add comments throughout the week. The goal is to have all lines 
 	; explained so that someone with little or no experience with assembly language programming 
 	; can see what each line does and understand what it means, or something close to it. If there's only 
-	; a certain line that you find confusing, you can just navigate to that lines comment and ignore the 
+	; a certain line that you find confusing, you can just navigate to that line's comment and ignore the 
 	; rest.
 
 
