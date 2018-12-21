@@ -17,26 +17,18 @@ _start:
 		
 _printDigits:			
 	xor r9, r9	
-
 __digitsToBytes:
 	xor rdx, rdx	
-	inc r9		
-			
+	inc r9				
 	mov rbx, 10		
 	div rbx		
-			
 	push rdx	
-
-	cmp rax, 0	
-				
+	cmp rax, 0		
 	jne __digitsToBytes
-
 	mov r10, asciiByte	
-
 __printNums:
 	pop rbx		
 	add bl, '0'	
-	
 	mov [r10], bl 	
 	
 	mov rsi, r10	
@@ -48,6 +40,4 @@ __printNums:
 	dec r9		
 	cmp r9, 0	
 	jne __printNums
-
 	ret
-
