@@ -56,9 +56,9 @@ section .data			; the lines until the next section will contain initialized vari
 				; You will see the number appear at your command line interface.
 				; If any of these commands don't work, try typing these commands into your terminal
 				; and then trying again, each followed by the enter key: First command updates your 
-				; linux system, which I'm assuming is ubuntu / debian. 2nd upgrades its files to
-				; the latest versions available, 3rd installs the nasm compiler which you need for the 
-				; above steps. Here's the 3 commands. Put your computers password in when the computer
+				; linux system (i.e. prepares it for upgrade), which I'm assuming is ubuntu / debian.
+				; 2nd upgrades its files to the latest versions available, 3rd installs the nasm compiler which you need for the 
+				; above steps. Here's the 3 commands. Put your login password in when the computer
 				; asks.
 				; sudo apt update
 				; sudo apt upgrade
