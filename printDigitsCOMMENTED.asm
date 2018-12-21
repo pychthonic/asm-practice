@@ -44,7 +44,9 @@ section .data			; the lines until the next section will contain initialized vari
 				; using a file editor to open the file, make the change, and save it, or typing, 
 				; without the enclosing double quotes, and substituting YOURNUMBERHERE with the new 
 				; number:
-				; "sed -i 's/66690210/YOURNUMBERHERE/g' printDigits.txt" followed by the enter key.
+				; "sed -i 's/66690210/YOURNUMBERHERE/g' printDigits.asm" followed by the enter key.
+				; That last command will take the file as it is and automatically substitute the old
+				; number with the new number wherever it finds it.
 				; Then type:
 				; 'nasm -f elf64 printDigits.asm' followed by the enter key. 
 				; Then type:
