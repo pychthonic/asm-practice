@@ -40,14 +40,18 @@ section .data			; the lines until the next section will contain initialized vari
 				; register. Go ahead, just replace the one I put  ("66690210") with the number you 
 				; want to print to the screen.
 				; If you're running linux, this entails downloading the .asm file, going to your 
-				; terminal, navigating to the directory you downloaded the file to, then typing, 
-				; without the single quotes:
+				; terminal, navigating to the directory you downloaded the file to, then either
+				; using a file editor to open the file, make the change, and save it, or typing, 
+				; without the enclosing double quotes, and substituting YOURNUMBERHERE with the new 
+				; number:
+				; "sed -i 's/66690210/YOURNUMBERHERE/g' printDigits.txt" followed by the enter key.
+				; Then type:
 				; 'nasm -f elf64 printDigits.asm' followed by the enter key. 
-				; Then type 
+				; Then type:
 				; 'ld -o printDigits printDigits.o' followed by the enter key. 
-				; Then type 
-				; './printDigits' followed by the enter key. You will see the
-				; number appear at your command line interface.
+				; Then type:
+				; './printDigits' followed by the enter key. 
+				; You will see the number appear at your command line interface.
 
 section .bss			; this means "This section will contain uninitialized data." Uninitialized data
 				; is variables whose values are not defined until the program runs. In this program,
