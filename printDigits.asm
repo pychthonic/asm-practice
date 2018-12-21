@@ -1,5 +1,5 @@
 section .data
-	num dq 666 	
+	num dq 66690210
 
 section .bss
 	asciiByte resb 1
