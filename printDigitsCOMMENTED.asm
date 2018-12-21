@@ -28,11 +28,11 @@ section .data			; the lines until the next section will contain initialized vari
 				; conventient for our purposes, since it means the program will print any number
 				; that will fit in one of your registers. And what *that* means is that once we get 
 				; it to work, we can print out the numbers that are held in any register! We can
-				; be like, 'Computer, what number do you have in your RBX register?' And the computer
-				; will be like '420, duh', and smoke will start churning out your computer's vent 
-				; cause your computer is a stoner who cuts class and hangs out at dairy queen.
-				; For now though, all we're concentrating on is 'how does a computer take a number 
-				; and print it to the computer screen?'
+				; be like, 'Computer, what number do you have in your RBX register?' And the 
+				; computer will be like '420, duh', and smoke will start churning out your 
+				; computer's vent cause your computer is a stoner who cuts class and hangs out at 
+				; dairy queen. For now though, all we're concentrating on is 'how does a computer 
+				; take a number and print it to the computer screen?'
 				; If you want to toy with the program, try substituting another decimal number in
 				; place of '66690210'. Actually, keep putting bigger numbers in til the program
 				; crashes and you get a segmentation fault. The segmentation fault means that the 
@@ -56,10 +56,10 @@ section .data			; the lines until the next section will contain initialized vari
 				; You will see the number appear at your command line interface.
 				; If any of these commands don't work, try typing these commands into your terminal
 				; and then trying again, each followed by the enter key: First command updates your 
-				; linux system (i.e. prepares it for upgrade), which I'm assuming is ubuntu / debian.
-				; 2nd upgrades its files to the latest versions available, 3rd installs the nasm compiler which you need for the 
-				; above steps. Here's the 3 commands. Put your login password in when the computer
-				; asks.
+				; linux system (i.e. prepares it for upgrade), which I'm assuming is ubuntu / 
+				; debian. 2nd upgrades its files to the latest versions available, 3rd installs 
+				; the nasm compiler which you need for the above steps. Here's the 3 commands. Put 
+				; your login password in when the computer asks:
 				; sudo apt update
 				; sudo apt upgrade
 				; sudo apt install nasm
