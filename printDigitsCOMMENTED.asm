@@ -27,15 +27,19 @@ section .data			; the lines until the next section will contain initialized vari
 				; a 64-bit or a 32-bit machine), then your registers hold 64 bits each. That's 
 				; conventient for our purposes, since it means the program will print any number
 				; that will fit in one of your registers. And what *that* means is that once we get 
-				; it to work, we can print out the numbers that are held in any register! But for
-				; now, all we're concentrating on is 'how does a computer take a number and print
-				; it to the computer screen?'
-				; If you want to toy with the program, try substituting another decimal number here, 
-				; up to the biggest number a 64-bit register can hold. Keep putting bigger numbers 
-				; in until you get a segmentation fault. The segmentation fault means that the 
-				; number you asked the computer to put in a register was too big. Just replace the 
-				; one I put  ("66690210") with the number you want to print to the screen. If 
-				; you're running linux, this entails downloading the .asm file, going to your 
+				; it to work, we can print out the numbers that are held in any register! We can
+				; be like, 'Computer, what number do you have in your RBX register?' And the computer
+				; will be like '420, duh', and smoke will start churning out your computer's vent 
+				; cause your computer is a stoner who cuts class and hangs out at dairy queen.
+				; For now though, all we're concentrating on is 'how does a computer take a number 
+				; and print it to the computer screen?'
+				; If you want to toy with the program, try substituting another decimal number in
+				; place of '66690210'. Actually, keep putting bigger numbers in til the program
+				; crashes and you get a segmentation fault. The segmentation fault means that the 
+				; number you asked the computer to put in the register was too big to fit in the
+				; register. Go ahead, just replace the one I put  ("66690210") with the number you 
+				; want to print to the screen.
+				; If you're running linux, this entails downloading the .asm file, going to your 
 				; terminal, navigating to the directory you downloaded the file to, then typing, 
 				; without the single quotes:
 				; 'nasm -f elf64 printDigits.asm' followed by the enter key. 
