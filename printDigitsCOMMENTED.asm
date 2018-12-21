@@ -63,6 +63,9 @@ section .data			; the lines until the next section will contain initialized vari
 				; sudo apt update
 				; sudo apt upgrade
 				; sudo apt install nasm
+				; (if the above commands are new to you, I encourage you to google them to verify 
+				; what they do instead of trustfully typing them in at the behest of someone whose 
+				; assembly language file you just downloaded from github...)
 
 section .bss			; this means "This section will contain uninitialized data." Uninitialized data
 				; is variables whose values are not defined until the program runs. In this program,
