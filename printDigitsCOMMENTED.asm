@@ -31,8 +31,8 @@ section .data			; the lines until the next section will contain initialized vari
 				; be like, 'Computer, what number do you have in your RBX register?' And the 
 				; computer will be like '420, duh', and smoke will start churning out your 
 				; computer's vent cause your computer is a stoner who cuts class and hangs out at
-				; dairy queen. For now though, all we're concentrating on 
-				; is 'how does a computer take a number and print it to the computer screen?'
+				; dairy queen. For now though, all we're concentrating on is 'how does a computer 
+				; take a number and print it to the computer screen?'
 				; If you want to toy with the program, try substituting another decimal number in
 				; place of '66690210'. Actually, keep putting bigger numbers in til the program
 				; crashes and you get a segmentation fault. The segmentation fault means that the 
