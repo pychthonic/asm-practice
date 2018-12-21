@@ -47,13 +47,22 @@ section .data			; the lines until the next section will contain initialized vari
 				; "sed -i 's/66690210/YOURNUMBERHERE/g' printDigits.asm" followed by the enter key.
 				; That last command will take the file as it is and automatically substitute the old
 				; number with the new number wherever it finds it.
-				; Then type:
-				; 'nasm -f elf64 printDigits.asm' followed by the enter key. 
-				; Then type:
-				; 'ld -o printDigits printDigits.o' followed by the enter key. 
-				; Then type:
-				; './printDigits' followed by the enter key. 
+				; Then compile it by typing:
+				; "nasm -f elf64 printDigits.asm" followed by the enter key. 
+				; Then run it through the dynamic linker by typing:
+				; "ld -o printDigits printDigits.o" followed by the enter key. 
+				; Then execute the program by typing:
+				; "./printDigits" followed by the enter key. 
 				; You will see the number appear at your command line interface.
+				; If any of these commands don't work, try typing these commands into your terminal
+				; and then trying again, each followed by the enter key: First command updates your 
+				; linux system, which I'm assuming is ubuntu / debian. 2nd upgrades its files to
+				; the latest versions available, 3rd installs the nasm compiler which you need for the 
+				; above steps. Here's the 3 commands. Put your computers password in when the computer
+				; asks.
+				; sudo apt update
+				; sudo apt upgrade
+				; sudo apt install nasm
 
 section .bss			; this means "This section will contain uninitialized data." Uninitialized data
 				; is variables whose values are not defined until the program runs. In this program,
