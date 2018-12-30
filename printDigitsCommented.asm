@@ -83,12 +83,12 @@ section .text
 	global _start
 
 _start:
-	mov rax, [num]
-	call _printDigits	
+	mov rax, [num]		; moving the number stored in the num variable into rax.
+	call _printDigits	; move to line 94 below
 
 	mov rax, 60		; exit
 	mov rdi, 0
-	syscall
+	syscall			; bye bye
 		
 
 _printDigits:			
@@ -123,7 +123,7 @@ printNums:
 	
 	dec r9		; r9 counted up how many digits we have to print above in digitsToBytes
 	cmp r9, 0	; now we count down.
-	jne printNums
+	jne printNums	; if r9 isn't zero, go back to printNums
 
 	ret
 
