@@ -93,7 +93,7 @@ iterate:
 _start:
 	mov rdi, -0x90210666420			; here's the number the program will print.
 						; it can be a 64-bit positive number or a 
-						; 63- bit negative number
+						; 63-bit negative number
 	call print_hex				; call the print function we wrote above
 	call print_newline			; print a new line
 
