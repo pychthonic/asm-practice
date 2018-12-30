@@ -1,7 +1,7 @@
 ;;;; I modified the assembly program found on page 27 of Igor 
 ;;;; Zhirkov's "Low Level Programming", so that it doesn't print 
 ;;;; leading zeros and prints negative numbers.
-;;;;
+;;;; 
 
 section .data
 newline db 0xa
