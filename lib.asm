@@ -1,4 +1,4 @@
-;;;; Just finished this library of basic assembly functions. It took me about 5 days to get right
+;;;; Just finished this library of basic assembly functions. It took me about 5 or 6 days to get right
 ;;;; so I'm happy about finishing it, lol. I'll put up a commented version soon and pare this version
 ;;;; down to less than 250 lines.
 
