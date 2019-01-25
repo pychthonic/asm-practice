@@ -1,7 +1,8 @@
-;;;; This is a library of basic assembly functions: exit, find string length, print string,
-;;;; print character, print newline, print unsigned int, print int, test two strings for 
-;;;; equivalence, read character from stdin, read word from stdin, parse string for unsigned
-;;;; int, parse string for signed int, and copy string.
+;;;; This is a library of basic assembly functions: exit, find string length, print string
+;;;; to stdout, print character to stdout, print newline to stdout, print unsigned int to
+;;;; stdout, print int to stdout, test two strings for equivalence, read character from stdin, 
+;;;; read word from stdin, parse string for unsigned int, parse string for signed int, and 
+;;;; copy string.
 
 section .text
 
