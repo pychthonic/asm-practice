@@ -1,6 +1,7 @@
-;;;; Just finished this library of basic assembly functions. It took me about 5 or 6 days to get right
-;;;; so I'm happy about finishing it, lol. I'll put up a commented version soon and pare this version
-;;;; down to less than 250 lines.
+;;;; Here's a library of basic assembly functions: exit, find string length, print string,
+;;;; print character, print newline, print unsigned int, print int, test two strings for 
+;;;; equality, read character from stdin, read word from stdin, parse string for unsigned
+;;;; int, parse string for signed int, and copy string.
 
 section .text
 
