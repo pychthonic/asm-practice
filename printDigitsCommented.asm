@@ -6,13 +6,6 @@
 	; you need to convert each decimal digit into an ascii character. For example, if you're printing the 
 	; number 430 to the screen, you'll have to first convert the number '4' to an ascii character, print it 
 	; to the screen, then do the same for the number '3', then do the same for the number '0'.
-	
-	; More commentary coming soon. I'll add comments throughout the week. The goal is to have all lines 
-	; explained so that someone with little or no experience with assembly language programming 
-	; can see what each line does and understand what it means, or something close to it. If there's only 
-	; a certain line that you find confusing, you can just navigate to that line's comment and ignore the 
-	; rest.
-
 
 section .data			; the lines until the next section will contain initialized variables. The '.data' 
 				; section in a file contains initialized variables, aka variables whose values are 
@@ -75,9 +68,9 @@ section .bss			; this means "This section will contain uninitialized data." Unin
 	asciiByte resb 1	; this means, 'reserve 1 byte of space and call it 'asciiByte'. notice how the word
 				; resb aka 'reserve byte' is used in the .bss section instead of the word 'dq' aka 
 				; 'define quadword'? That's because you're reserving space for an uninitialized variable,
-				; instead of defining it in the text of the program. The variable will be defined in 
-				; when it's run, instead of by you explicitly when you initialize it, aka name it in
-				; the .bss section.
+				; instead of defining it in the text of the program. The variable will be defined when
+				; the program is run, instead of by you explicitly when you initialize it, aka name it
+				; in the .bss section.
 
 section .text
 	global _start
