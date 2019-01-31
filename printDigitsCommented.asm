@@ -77,7 +77,7 @@ section .text
 
 _start:
 	mov rax, [num]		; moving the number stored in the num variable into rax.
-	call _printDigits	; move to line 94 below
+	call _printDigits	; move to line 90 below
 
 	mov rax, 60		; exit
 	mov rdi, 0
@@ -88,7 +88,7 @@ _printDigits:
 	xor r9, r9	; zeroing out r9 just in case
 
 digitsToBytes:
-	xor rdx, rdx	; clear remainder from last time through loop (see line 21)
+	xor rdx, rdx	; clear remainder from last time through loop 
 	inc r9		; r9 is used to keep track of how many times loop happened
 			; which is used later when printing out the digits
 	mov rbx, 10		
