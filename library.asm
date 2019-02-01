@@ -4,14 +4,16 @@
 ;;;; read word from stdin, parse string for unsigned int, parse string for signed int, and 
 ;;;; copy string.
 
-section .text
+section .text					; The .text section is where executable instructions go.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-exit:
-	xor rdi, rdi
-	mov rax, 60
-	syscall
+exit:						; this first function cleanly exits the program.
+	xor rdi, rdi				; xor'ing the same register twice makes it all 0's
+	mov rax, 60				; moving the number 60 into the rax register means exit 
+						; if a syscall is subsequently called.
+	syscall					; annnnd there's the syscall. The program checks the rax register,
+						; finds the number 60 from the previous instruction, and exits.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
