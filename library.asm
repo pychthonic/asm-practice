@@ -18,16 +18,20 @@ exit:						; this first function cleanly exits the program.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 string_length:
-	xor rax, rax
+	xor rax, rax				; clear all rax bits
  
 _string_length_loop:
-	cmp byte [rdi + rax], 0
-	je _string_length_exit
-	inc rax
-	jmp _string_length_loop
+	cmp byte [rdi + rax], 0			; compare the byte of data found at (rdi + rax) to 0. rax contains 0 the 
+						; first time through the loop, and is incremented by 1 each time through
+						; the loop.
+	je _string_length_exit			; if the byte of data found at (rdi + rax) is equal to zero, jump to
+						; _string_length_exit
+	inc rax					; adds 1 to rax
+	jmp _string_length_loop			; start the loop over
 
 _string_length_exit:
-   	ret
+   	ret					; return to where the function was called. rax will hold the number
+						; of characters in the string.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
