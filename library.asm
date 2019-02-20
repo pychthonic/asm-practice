@@ -35,13 +35,13 @@ _string_length_exit:
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-print_string:
-	call string_length
-	mov rdx, rax
+print_string:	
+	call string_length			; this will put the number of characters contained by the string in rax
+	mov rdx, rax				; move rax number into rdx
 
-    	mov rsi, rdi
-    	mov rdi, 1
-    	mov rax, 1
+    	mov rsi, rdi				; move the address in rdi into rsi 
+    	mov rdi, 1				
+    	mov rax, 1				
     	syscall
     	ret
 
