@@ -48,16 +48,16 @@ print_string:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 print_char:
-	push rdi
+	push rdi				; push rdi which contains the character to be printed onto stack
 
-	mov rax, 1
-	mov rsi, rsp
+	mov rax, 1				
+	mov rsi, rsp				; push stack pointer into rsi, so it points to what we just pushed onto it
 	mov rdi, 1
 	mov rdx, 1
-	syscall
+	syscall					; write it to the screen
 
-	pop rdi
-	ret
+	pop rdi					; pop the character back into rdi
+	ret					; return to the line that called print_char
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
