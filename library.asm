@@ -62,9 +62,9 @@ print_char:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 print_newline:
-	mov rdi, 0xa
-	call print_char
-	ret
+	mov rdi, 0xa				; 0xa is ascii hexadecimal byte for 'new line'
+	call print_char				; call print_char, which prints whatever's in rdi
+	ret					; return to line that called print_newline
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
