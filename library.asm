@@ -69,9 +69,9 @@ print_newline:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 print_uint:
-	push rbx
-	xor r9, r9
-	mov rax, rdi
+	push rbx				; push rbx onto stack
+	xor r9, r9				; clear r9 register
+	mov rax, rdi				; move contents of rdi register into rax register
 	
 _print_uint_loop1:
 	xor rdx, rdx
